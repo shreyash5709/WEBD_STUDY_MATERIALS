@@ -1,0 +1,12 @@
+h1{
+    color: maroon;
+}
+
+.post{
+    background-color: wheat;
+}
+
+.user{
+    text-transform: uppercase;
+    font-style: italic;
+}
