@@ -1,0 +1,13 @@
+.box{
+    height: 200px;
+    width: 500px;
+    background-color: wheat;
+}
+
+ul{
+    background-color: gray;
+}
+
+li{
+    background-color: aqua;
+}

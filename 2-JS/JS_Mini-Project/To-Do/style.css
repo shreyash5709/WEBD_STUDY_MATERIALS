@@ -1,0 +1,8 @@
+div, button{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.delete, li{
+    margin: 10px;;
+}

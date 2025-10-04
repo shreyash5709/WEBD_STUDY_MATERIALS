@@ -1,0 +1,22 @@
+h1{
+    background-color: yellow;
+    border-radius: 2px solid black;
+}
+
+@media (width: 400px){
+    h1{
+        background-color: red;
+    }
+}
+
+@media(max-width: 399.9px){
+    h1{
+        background-color: greenyellow;
+    }
+}
+
+@media(min-width: 400.1px){
+    h1{
+        background-color: rgb(112, 158, 218);
+    }
+}
