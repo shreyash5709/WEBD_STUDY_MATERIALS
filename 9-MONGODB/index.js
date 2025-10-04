@@ -34,6 +34,10 @@ const User = mongoose.model("User", userSchema);
 //     console.log(res);
 // });
 
-User.find({age: {$gte: 19}}).then((res) => {
-    console.log("Resulte are here : ",res);
-});
+User.deleteOne({name: "Adam"})
+    .then((res) => {
+        console.log(res);
+    })
+    .catch((err) => {
+        console.log(err);
+    });
