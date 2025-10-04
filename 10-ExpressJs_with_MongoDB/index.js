@@ -46,18 +46,27 @@ app.post("/chats", async(req, res) => {
 
 // editin chat
 app.get("/chats/:id/edit", async(req, res) => {
-    let id = req.params.id;
+    let {id} = req.params;
     let chat = await Chat.findById(id);
     res.render("edit.ejs", {chat});
 });
+
 // update chat
 app.post("/chats/:id", async(req, res) => {
-    let id = req.params.id;
+    let {id} = req.params;
     let {msg : newMsg} = req.body;
     await Chat.findByIdAndUpdate(id, 
         {msg: newMsg}, 
         {runValidators: true, new: true}
     );
+    res.redirect("/chats");
+});
+
+// delete chat
+app.delete("/chats/:id", async(req, res) => {
+    let {id} = req.params;
+    let deletedChat = await Chat.findByIdAndDelete(id);
+    console.log(deletedChat);
     res.redirect("/chats");
 });
 
