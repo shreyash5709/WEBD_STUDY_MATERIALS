@@ -1,6 +1,6 @@
 function MsgBox({userName, textColor}){
     return (
-        <p style={{color: textColor}}>Hi, {userName}!</p>
+        <h1 style={{color: textColor}}>Hi, {userName}!</h1>
     )
 }
 

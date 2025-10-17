@@ -6,9 +6,9 @@ import MsgBox from './MsgBox';
 function App() {
   return(
     <>
+      <MsgBox userName={"Shreyash"} textColor={"red"}/>
       <Title/>
       <ProductTab/>
-      <MsgBox userName={"Shreyash"} textColor={"red"}/>
     </>
   )
 }
