@@ -1,7 +1,11 @@
 .Product{
     border: 2px solid red;
-    margin-top: 10px;
+    margin-left: 15px;
+    width: 250px;
+    height: 150px;
     border-radius: 20px;
     background-color: white;
     color: black;
-}
+    padding: 0 10px 0 10px;
+    align-items: center;
+}  
